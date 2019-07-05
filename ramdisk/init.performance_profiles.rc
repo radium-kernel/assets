@@ -1,8 +1,0 @@
-# Power saving profile
-on property:fku.perf.profile=0
-
-# Balance (FK defaults)
-on property:fku.perf.profile=1
-
-# Performance
-on property:fku.perf.profile=2
