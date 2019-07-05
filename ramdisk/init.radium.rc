@@ -1,4 +1,7 @@
 #Alize and radium POWER
+on property:sys.boot_completed=1 
+    setprop fku.profiles 1
+
 on late-fs
     write /sys/block/sda/queue/iostats 0
     write /sys/block/sda/queue/scheduler cfq
@@ -35,4 +38,4 @@ on property:sys.boot_completed=1
     write /sys/module/adreno_idler/parameters/adreno_idler_downdifferential 25
     write /sys/module/adreno_idler/parameters/adreno_idler_idlewait 10
     write /sys/module/adreno_idler/parameters/adreno_idler_idleworkload 8000
-    write /sys/kernel/cpu_input_boost/enabled 0
+    write /sys/kernel/cpu_input_boost/enabled 1
